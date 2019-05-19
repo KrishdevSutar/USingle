@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">USingle</string>
+    <string name="action_finished_sign_up_essentials">Go to details</string>
+
+    <string-array name="universities">
+        <item>McMaster University</item>
+        <item>Ryerson University</item>
+        <item>University of Toronto, St. George</item>
+        <item>University of Toronto, Scarborough</item>
+        <item>University of Toronto, Mississauga</item>
+        <item>University of Waterloo</item>
+    </string-array>
+
+    <string-array name="programs">
+        <item>Criminology</item>
+        <item>Computer Science</item>
+        <item>Computer Engineering</item>
+        <item>Mathematics</item>
+        <item>Nursing</item>
+        <item>Physical Sciences</item>
+    </string-array>
+
+    <string-array name="sexualPreference">
+        <item>Aboriginal</item>
+        <item>Arabian</item>
+        <item>Black</item>
+        <item>Chinese</item>
+        <item>Filipino</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Latin American</item>
+        <item>South Asian</item>
+        <item>South East Asian</item>
+        <item>White (Caucasian)</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="sexual_preference">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="type_of_relationship">
+        <item>Casual</item>
+        <item>Serious</item>
+        <item>Friends with Benefits</item>
+        <item>Sugar Daddy</item>
+    </string-array>
+
+    <string name="unlink">Unlink</string>
+    <string name="name">Your Match \ud83e\udd18</string>
+    <string name="input_placeholder">Message</string>
+    <string name="bitmoji">Bitmoji</string>
+    <string name="friendmoji">Friendmoji</string>
+</resources>

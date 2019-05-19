@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SignUpDetailsActivity">
+
+    <include
+        android:id="@+id/sign_up_details_activity_toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Place of Study"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="25dp"
+                />
+
+            <Spinner
+                android:id="@+id/signUpUniversitySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:entries="@array/universities"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Program"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="25dp"
+                />
+
+            <Spinner
+                android:id="@+id/signUpProgramSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:entries="@array/programs"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="25dp"
+                android:text="Hobbies (comma seperated)"/>
+
+            <EditText
+                android:id="@+id/signUpHobbiesInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textAppearance="@style/EditableTextStyle"
+                android:hint="biking, swimming, chess"
+                android:inputType="textAutoCorrect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="25dp"
+                android:text="Things you dislike (comma seperated)"/>
+
+            <EditText
+                android:id="@+id/signUpThingsYouHateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textAppearance="@style/EditableTextStyle"
+                android:hint="censorship, kids, sheeple"
+                android:inputType="textAutoCorrect" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

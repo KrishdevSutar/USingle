@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.usingle">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.snapchat.kit.sdk.clientId" android:value="cd684116-68ae-4bbe-ae2e-f3beb9840485" />
+        <meta-data android:name="com.snapchat.kit.sdk.redirectUrl" android:value="usingletester://abc/x/z" />
+        <meta-data android:name="com.snapchat.kit.sdk.scopes" android:resource="@array/snap_connect_scopes" />
+
+        <!--<meta-data android:name="com.snapchat.kit.sdk.clientId" android:value="148700b7-acfc-4266-84f6-2f419857ff20" />-->
+        <!--<meta-data android:name="com.snapchat.kit.sdk.clientId" android:value="cd684116-68ae-4bbe-ae2e-f3beb9840485" />-->
+        <!--<meta-data android:name="com.snapchat.kit.sdk.redirectUrl" android:value="usingle://snap-kit/oauth2" />-->
+        <!--<meta-data android:name="com.snapchat.kit.sdk.redirectUrl" android:value="usingletester://abc/x/z" />-->
+        <!--<meta-data android:name="com.snapchat.kit.sdk.scopes" android:resource="@array/snap_connect_scopes" />-->
+
+        <activity
+            android:name=".activities.MessagingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            >
+        </activity>
+        <activity
+            android:name="com.snapchat.kit.sdk.SnapKitActivity"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--
+                    Enter the parts of your redirect url below
+                    e.g. if your redirect url is my-app://abc/xy/z
+                    usingletester://abc/x/z
+
+                    android:scheme="my-app"
+                    android:host="abc"
+                    android:path="/xy/z"
+                    >-->
+                <data
+                    android:scheme="usingletester"
+                    android:host="abc"
+                    android:path="/x/z"
+                    />
+
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUpAvatarSnapchatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUpPreferencesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUpDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUpEssentialsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.StartScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

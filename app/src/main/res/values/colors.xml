@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_green" content="#E53935"/>
+    <color name="titlebar_green" content="#B71C1C"/>
+    <color name="white" content="#ffffff"/>
+    <color name="PrimaryAppColour">#E53935</color>
+    <color name="PrimaryDarkAppColour">#D50000</color>
+    <color name="medium_grey">#bcaaa4</color>
+    <color name="lighter_grey">#D7CCC8</color>
+    <color name="background_1">#F06292</color>
+    <color name="almost_white">#EEEEEE</color>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#E5E5E5</color>
+    <color name="colorAccent">@color/green_bubble_color</color>
+
+    <color name="border_grey">#CCCCCC</color>
+    <color name = "red">#B71C1C</color>
+    <color name ="red_purple">#4D0D0D</color>
+    <color name="grey_bubble_color">#E5E5E5</color>
+    <color name="green_bubble_color">#66CC99</color>
+</resources>

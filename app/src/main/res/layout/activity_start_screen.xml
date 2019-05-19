@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/start_background"
+    tools:context=".activities.StartScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.66">
+        <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="50dp"
+            android:cropToPadding="false"
+            android:src="@drawable/logo"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.33">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/loginButton"
+                    android:theme="@style/AppTheme.Button"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:onClick="loginAction"
+                    android:background="@drawable/round_shape"
+                    android:layout_marginBottom="25dp"
+                    android:text="Login" />
+
+                <Button
+                    android:id="@+id/signUpButton"
+                    android:theme="@style/AppTheme.Button"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:onClick="signUpAction"
+                    android:background="@drawable/round_shape"
+                    android:text="Sign Up" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text="Not your typical university networking app!"
+                    android:textColor="@color/almost_white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
